@@ -1,0 +1,21 @@
+title: Grupa
+email: hello@grupa.app
+description: >-
+  Grupa makes group coordination effortless. Create groups, assign tasks, chat in real time, and track everything in one shared dashboard.
+baseurl: ""
+url: "https://grupa.app"
+
+tagline: "Group Task Management"
+app_store_url: "#"
+play_store_url: "#"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache/
+  - _site/
