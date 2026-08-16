@@ -1,0 +1,70 @@
+name: Deploy site
+
+# The Jekyll site lives in grupa-website/, not at the repo root, so GitHub
+# Pages cannot build it with its built-in Jekyll support — it has to be built
+# here and uploaded as an artifact.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "grupa-website/**"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never cancel a run mid-publish; let it finish and queue the next one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: grupa-website
+    steps:
+      - uses: actions/checkout@v4
+
+      # Local dev runs Ruby 4.0, but Gemfile.lock pins no RUBY VERSION and
+      # already lists the x86_64-linux-gnu platform, so 3.4 resolves fine and
+      # is what the runners actually ship.
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+          bundler-cache: true
+          working-directory: grupa-website
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      # base_path is empty once a custom domain is set, and /main-site while
+      # the site is still on github.io — so this works either way.
+      #
+      # `make check` builds and then fails on unfilled "SET THIS" legal
+      # placeholders, so an incomplete privacy policy or terms page can never
+      # reach production. That guard is the point of running make here rather
+      # than calling jekyll directly.
+      - name: Build and verify
+        run: make check BASEURL="${{ steps.pages.outputs.base_path }}"
+
+      # Path is relative to the workspace root — defaults.run.working-directory
+      # applies to `run` steps only, not to action inputs.
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: grupa-website/_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
