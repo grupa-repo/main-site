@@ -117,4 +117,4 @@ We will update this page when our practices change, and we will change the effec
 
 Questions, requests, or complaints: [{{ site.legal.contact_email }}](mailto:{{ site.legal.contact_email }}).
 
-{{ site.legal.entity }}, {{ site.legal.address }}
+{{ site.legal.entity }}

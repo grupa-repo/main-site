@@ -1,5 +1,5 @@
 title: Grupa
-email: hello@grupa.app
+email: hproject7303@gmail.com
 description: >-
   Grupa makes group coordination effortless. Create groups, assign tasks, chat in real time, and track everything in one shared dashboard.
 baseurl: ""
@@ -12,14 +12,19 @@ play_store_url: "#"
 # Rendered verbatim on /privacy/ and /terms/. These appear on public legal
 # pages — replace every "SET THIS" before publishing the site or submitting
 # the URLs to Google or App Store Connect.
+#
+# `address` is deliberately unset and no longer rendered on either page: Grupa
+# operates as a sole proprietorship, so the only address available would be a
+# home address. Revisit if Grupa incorporates, or if it starts sending
+# marketing email — CASL requires a mailing address in commercial messages.
+# A mailbox service or virtual office satisfies that without publishing a home.
 legal:
-  entity: "SET THIS — registered legal name, e.g. Grupa Inc."
-  address: "SET THIS — registered business address"
-  jurisdiction: "SET THIS — governing law, e.g. Ontario, Canada"
-  contact_email: "hello@grupa.app"
-  effective_date: "SET THIS — e.g. 1 September 2026"
+  entity: "Hyunbin Park"
+  jurisdiction: "Ontario, Canada"
+  contact_email: "hproject7303@gmail.com"
+  effective_date: "16 August 2026"
   backup_retention: "SET THIS — e.g. 7 days (check your Heroku Postgres plan)"
-  liability_cap: "SET THIS — e.g. US$100"
+  liability_cap: "US$100"
 
 # Build settings
 theme: minima
@@ -29,5 +34,6 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - Makefile
   - .jekyll-cache/
   - _site/

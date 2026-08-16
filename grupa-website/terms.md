@@ -100,4 +100,4 @@ These terms are governed by the laws of {{ site.legal.jurisdiction }}, and the c
 
 [{{ site.legal.contact_email }}](mailto:{{ site.legal.contact_email }})
 
-{{ site.legal.entity }}, {{ site.legal.address }}
+{{ site.legal.entity }}
