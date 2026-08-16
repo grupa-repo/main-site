@@ -81,10 +81,10 @@
         <div>
           <div class="footer-col-title">Legal</div>
           <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Cookie Policy</a></li>
-            <li><a href="#">Support</a></li>
+            <li><a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a></li>
+            <li><a href="{{ '/terms/' | relative_url }}">Terms of Service</a></li>
+            <li><a href="{{ '/privacy/#cookies' | relative_url }}">Cookies</a></li>
+            <li><a href="mailto:{{ site.legal.contact_email }}">Support</a></li>
           </ul>
         </div>
       </div>

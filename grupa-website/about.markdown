@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /about/
 title: About Grupa
 description: We're a small team with a big belief — that technology should bring people closer, not pull them apart.
 ---

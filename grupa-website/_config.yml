@@ -9,6 +9,18 @@ tagline: "Group Task Management"
 app_store_url: "#"
 play_store_url: "#"
 
+# Rendered verbatim on /privacy/ and /terms/. These appear on public legal
+# pages — replace every "SET THIS" before publishing the site or submitting
+# the URLs to Google or App Store Connect.
+legal:
+  entity: "SET THIS — registered legal name, e.g. Grupa Inc."
+  address: "SET THIS — registered business address"
+  jurisdiction: "SET THIS — governing law, e.g. Ontario, Canada"
+  contact_email: "hello@grupa.app"
+  effective_date: "SET THIS — e.g. 1 September 2026"
+  backup_retention: "SET THIS — e.g. 7 days (check your Heroku Postgres plan)"
+  liability_cap: "SET THIS — e.g. US$100"
+
 # Build settings
 theme: minima
 plugins:
