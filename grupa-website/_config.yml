@@ -23,7 +23,7 @@ legal:
   jurisdiction: "Ontario, Canada"
   contact_email: "hproject7303@gmail.com"
   effective_date: "16 August 2026"
-  backup_retention: "SET THIS — e.g. 7 days (check your Heroku Postgres plan)"
+  backup_retention: "7 days"
   liability_cap: "US$100"
 
 # Build settings
