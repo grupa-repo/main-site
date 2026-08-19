@@ -1,4 +1,4 @@
-# Grupa marketing site — https://grupa.app
+# Grupa marketing site — https://grupaapp.com
 #
 # Requires Ruby + Bundler. Everything runs through `bundle exec` so the
 # pinned Jekyll version in Gemfile.lock is the one that builds.
