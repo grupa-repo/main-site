@@ -59,6 +59,8 @@ We may also disclose data if we are legally required to — a court order, a law
 
 Our servers are in the United States. If you use Grupa from the EEA or the UK, your data is transferred there. Where required, these transfers rely on the European Commission's Standard Contractual Clauses.
 
+If you use Grupa from Canada, your data is also stored and processed in the United States by the providers named above. While it is there, it is subject to United States law, and United States courts, law enforcement, and national security authorities may be able to obtain access to it under that law. We remain accountable for your data under Canada's Personal Information Protection and Electronic Documents Act (PIPEDA) wherever it is processed, and we require our providers to protect it to a comparable standard by contract.
+
 ## How long we keep it
 
 While your account is open, we keep your data for as long as you use Grupa. Server logs are kept for a short operational window and then rotated out.
@@ -93,7 +95,7 @@ Depending on where you live, you have some or all of the following rights: to ac
 
 Most of these you can exercise directly in the app — edit your profile, or delete your account. For anything else, email [{{ site.legal.contact_email }}](mailto:{{ site.legal.contact_email }}). We will respond within one month.
 
-We do not discriminate against you for exercising these rights. If you are in the EEA or UK and you are unhappy with how we have handled a request, you can complain to your local data protection authority.
+We do not discriminate against you for exercising these rights. If you are in the EEA or UK and you are unhappy with how we have handled a request, you can complain to your local data protection authority. If you are in Canada, you can complain to the Office of the Privacy Commissioner of Canada at [priv.gc.ca](https://www.priv.gc.ca/), and you have the right to challenge the accuracy and completeness of the data we hold about you.
 
 ## Children
 
