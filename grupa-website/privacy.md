@@ -5,7 +5,7 @@ title: Privacy Policy
 description: How Grupa collects, uses, shares, and deletes your personal data.
 ---
 
-**Effective {{ site.legal.effective_date }}**
+**Effective {{ site.legal.privacy_effective_date }}**
 
 This policy explains what {{ site.legal.entity }} ("Grupa", "we", "us") collects when you use the Grupa mobile app and this website, why we collect it, who else sees it, and how long we keep it.
 

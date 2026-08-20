@@ -5,7 +5,7 @@ title: Terms of Service
 description: The terms you agree to when you use the Grupa app and website.
 ---
 
-**Effective {{ site.legal.effective_date }}**
+**Effective {{ site.legal.terms_effective_date }}**
 
 These terms are an agreement between you and {{ site.legal.entity }} ("Grupa", "we", "us") covering the Grupa mobile app and this website. By creating an account or using Grupa, you accept them. If you do not, please do not use the service.
 

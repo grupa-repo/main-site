@@ -1478,3 +1478,19 @@ img {
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--bg-muted); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+/* Store badges before the app is listed. app_store_url is "#" until the
+   listing exists, so the badge renders as a non-interactive span — a button
+   that goes nowhere reads worse than one that says it is not ready. */
+.btn-store.is-unavailable,
+.btn-primary.is-unavailable {
+  cursor: default;
+  opacity: 0.55;
+  box-shadow: none;
+}
+
+.btn-store.is-unavailable:hover,
+.btn-primary.is-unavailable:hover {
+  transform: none;
+  box-shadow: none;
+}
