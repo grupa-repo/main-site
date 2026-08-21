@@ -47,7 +47,7 @@ If you use Apple to sign in, we receive your name and either your email address 
 
 **Other members of your groups.** This is the main one. Your display name, and any tasks, messages, and attachments you add to a group, are visible to everyone else in that group. Anyone can be added to a group by an existing member, so treat a group the way you would treat a group chat.
 
-**Our infrastructure providers.** Grupa runs on Heroku (Salesforce), which hosts our application servers and our PostgreSQL database in the United States. Heroku processes this data on our instructions and does not use it for its own purposes.
+**Our infrastructure providers.** Our application servers run on Heroku (Salesforce). Our database is hosted by Neon, which runs on Amazon Web Services. Both are located in the United States. Each processes this data on our instructions, under contract, and does not use it for its own purposes.
 
 **Google and Apple**, for identity, as described above.
 
@@ -103,7 +103,7 @@ Grupa is not intended for children under 13, or under 16 in the EEA and UK. We d
 
 ## Security
 
-We serve all traffic over HTTPS, hash passwords, store data in a managed database that is not publicly reachable, and restrict access to production systems to the people who need it.
+We serve all traffic over HTTPS, hash passwords, require credentials and an encrypted connection for every connection to our database, and restrict access to production systems to the people who need it.
 
 To be clear about what we do **not** do: Grupa messages are not end-to-end encrypted. They are encrypted in transit and at rest, but we hold the keys, which means we are technically capable of reading message content and are obliged to produce it under a valid legal order. No system is perfectly secure, and we cannot guarantee absolute security.
 
