@@ -1,5 +1,5 @@
 title: Grupa
-email: hproject7303@gmail.com
+email: support@grupaapp.com
 description: >-
   Grupa makes group coordination effortless. Create groups, assign tasks, chat in real time, and track everything in one shared dashboard.
 baseurl: ""
@@ -21,7 +21,7 @@ play_store_url: "#"
 legal:
   entity: "Hyunbin Park"
   jurisdiction: "Ontario, Canada"
-  contact_email: "hproject7303@gmail.com"
+  contact_email: "support@grupaapp.com"
   # Dated separately: the two documents change independently, and a shared
   # value makes one of them claim a revision it never had.
   privacy_effective_date: "21 August 2026"
