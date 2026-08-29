@@ -23,7 +23,9 @@ Grupa is a shared app. Almost everything you do in it — tasks, messages, group
 
 ## What we do not do
 
-We do not sell your personal data. We do not share it with advertisers, we do not run ads in Grupa, we do not use your messages or tasks to build an advertising profile, and we do not use third-party analytics or tracking SDKs in the app.
+We do not sell your personal data. We do not share it with advertisers, we do not run ads in Grupa, and we do not use your messages or tasks to build an advertising profile. We add no analytics or advertising SDKs to Grupa, and we do not track you across other apps or websites.
+
+One qualification, because it would otherwise make the sentence above untrue: signing in with Google uses Google's own SDK, which states that it may collect data for its own purposes — including analytics — under [Google's privacy policy](https://policies.google.com/privacy). Signing in with Apple uses Apple's. We do not receive that data and we do not use it; it is the cost of offering those sign-in options, and using a password instead avoids it.
 
 ## How we use it
 
