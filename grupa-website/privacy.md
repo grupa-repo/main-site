@@ -15,9 +15,9 @@ Grupa is a shared app. Almost everything you do in it — tasks, messages, group
 
 **Account information.** When you create an account we store an email address and a username. If you sign in with Google or Apple, we receive your email address, your name, and a stable identifier from that provider, and we store a link between your Grupa account and your provider account. If you sign in with a password instead, we store a cryptographic hash of it, never the password itself.
 
-**Profile information you choose to add.** First and last name, a display name, phone number, gender, and date of birth. These are optional, and you can leave them blank.
+**Profile information you choose to add.** First and last name, and a display name. These are optional, and you can leave them blank.
 
-**Content you create.** Groups you belong to, tasks you create or are assigned, task titles, descriptions and due dates, invitations you send or receive, chat messages you send, any images or files you attach to a message, and which messages you have read.
+**Content you create.** Groups you belong to, tasks you create or are assigned, task titles, descriptions and due dates, invitations you send or receive, chat messages you send, and which messages you have read.
 
 **Technical information.** Our servers record ordinary request logs — IP address, timestamp, the endpoint called, and the app version and device type — for security, debugging, and abuse prevention.
 
@@ -45,7 +45,7 @@ If you use Apple to sign in, we receive your name and either your email address 
 
 ## Who else sees your data
 
-**Other members of your groups.** This is the main one. Your display name, and any tasks, messages, and attachments you add to a group, are visible to everyone else in that group. Anyone can be added to a group by an existing member, so treat a group the way you would treat a group chat.
+**Other members of your groups.** This is the main one. Your display name, and any tasks and messages you add to a group, are visible to everyone else in that group. Anyone can be added to a group by an existing member, so treat a group the way you would treat a group chat.
 
 **Our infrastructure providers.** Our application servers run on Heroku (Salesforce). Our database is hosted by Neon, which runs on Amazon Web Services. Both are located in the United States. Each processes this data on our instructions, under contract, and does not use it for its own purposes.
 
@@ -71,7 +71,7 @@ You can delete your account from inside the app, under Settings. We want to be e
 
 **Deleted outright:**
 
-- Your email address, username, first and last name, display name, phone number, gender, and date of birth.
+- Your email address, username, first and last name, and display name.
 - Your password hash and all active sessions and refresh tokens.
 - The links between your Grupa account and your Google or Apple account. Your Sign in with Apple token is revoked with Apple.
 - Your read-tracking data.
@@ -81,7 +81,7 @@ You can delete your account from inside the app, under Settings. We want to be e
 
 - An empty account record, keyed only by an internal identifier, recording that an account existed and when it was deleted. This is an audit record and contains no personal details.
 - Tasks and groups you created. Other members are still using them, so they remain and show as created by a deleted user.
-- **Chat messages you sent, including their text and any attachments.** Your name is removed and they render as coming from a deleted user, but the content stays, so that conversations other members are still reading remain intact.
+- **Chat messages you sent, including their text.** Your name is removed and they render as coming from a deleted user, but the content stays, so that conversations other members are still reading remain intact.
 
 That last point is the one to read twice. If you have posted something in a chat that you specifically want erased — a phone number, an address, anything you would not want to persist — deleting your account will not remove it. Email us at [{{ site.legal.contact_email }}](mailto:{{ site.legal.contact_email }}) and we will erase the content itself.
 

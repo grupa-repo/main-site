@@ -35,7 +35,7 @@ In the app, open Settings and choose to delete your account. You'll be asked to 
 
 **What happens to my data when I delete my account?**
 
-Your profile is erased — email address, name, phone number, date of birth, and the link to your Google or Apple account. Tasks and groups you created stay for the other members who are still using them, shown as created by a deleted user, and messages you sent stay in their conversations with your name removed.
+Your profile is erased — email address, name, and the link to your Google or Apple account. Tasks and groups you created stay for the other members who are still using them, shown as created by a deleted user, and messages you sent stay in their conversations with your name removed.
 
 That last part matters: **the text of your messages is retained.** If there's something specific you want erased, email us and we'll remove the content itself. The [Privacy Policy]({{ '/privacy/' | relative_url }}) explains this field by field.
 

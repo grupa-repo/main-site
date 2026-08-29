@@ -24,7 +24,7 @@ legal:
   contact_email: "support@grupaapp.com"
   # Dated separately: the two documents change independently, and a shared
   # value makes one of them claim a revision it never had.
-  privacy_effective_date: "21 August 2026"
+  privacy_effective_date: "29 August 2026"
   terms_effective_date: "16 August 2026"
   backup_retention: "7 days"
   liability_cap: "US$100"
