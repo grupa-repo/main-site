@@ -13,25 +13,27 @@ Grupa is a shared app. Almost everything you do in it — tasks, messages, group
 
 ## What we collect
 
-**Account information.** When you create an account we store an email address and a username. If you sign in with Google or Apple, we receive your email address, your name, and a stable identifier from that provider, and we store a link between your Grupa account and your provider account. If you sign in with a password instead, we store a cryptographic hash of it, never the password itself.
+**Account information.** You sign in to Grupa with Google or Apple; Grupa has no passwords of its own. From that provider we receive your email address, your name, and a stable identifier, and we store a link between your Grupa account and your provider account. When you create your account you also choose a username.
 
-**Profile information you choose to add.** First and last name, and a display name. These are optional, and you can leave them blank.
+**Profile information.** Your first and last name, which you enter or confirm when you create your account.
 
-**Content you create.** Groups you belong to, tasks you create or are assigned, task titles, descriptions and due dates, invitations you send or receive, chat messages you send, and which messages you have read.
+**Content you create.** Groups you belong to, tasks you create or are assigned, task titles, descriptions and due dates, invitations you send or receive, chat messages you send, which messages you have read, and who you have blocked.
 
-**Technical information.** Our servers record ordinary request logs — IP address, timestamp, the endpoint called, and the app version and device type — for security, debugging, and abuse prevention.
+**Reports.** If you report a message, we receive the text of that message, who sent it, who reported it, and the reason given.
+
+**Technical information.** Our servers record ordinary request logs — IP address, timestamp, the endpoint called, and the app version and device type — for security, debugging, and abuse prevention. For each device you are signed in on, we also keep its device type and app version with that sign-in, so that sessions can be told apart and ended.
 
 ## What we do not do
 
 We do not sell your personal data. We do not share it with advertisers, we do not run ads in Grupa, and we do not use your messages or tasks to build an advertising profile. We add no analytics or advertising SDKs to Grupa, and we do not track you across other apps or websites.
 
-One qualification, because it would otherwise make the sentence above untrue: signing in with Google uses Google's own SDK, which states that it may collect data for its own purposes — including analytics — under [Google's privacy policy](https://policies.google.com/privacy). Signing in with Apple uses Apple's. We do not receive that data and we do not use it; it is the cost of offering those sign-in options, and using a password instead avoids it.
+One qualification, because it would otherwise make the sentence above untrue: signing in with Google uses Google's own SDK, which states that it may collect data for its own purposes — including analytics — under [Google's privacy policy](https://policies.google.com/privacy). Signing in with Apple uses Apple's. We do not receive that data and we do not use it; it is the cost of offering those sign-in options.
 
 ## How we use it
 
-To run the service: authenticating you, showing your groups and tasks to the right people, delivering chat messages, and tracking what you have read so unread counts work. To keep the service secure and to investigate abuse. To respond to you when you contact support. And to meet our legal obligations.
+To run the service: authenticating you, showing your groups and tasks to the right people, delivering chat messages, and tracking what you have read so unread counts work. To keep the service secure and to investigate abuse: a message is checked against a short list of slurs and threats when it is sent and is refused if it matches, and a person reviews each report. To respond to you when you contact support. And to meet our legal obligations.
 
-If you are in the EEA or UK, our legal bases are: **performance of a contract** for everything needed to operate your account and deliver the app; **legitimate interests** for security, abuse prevention, and debugging; **consent** where we ask for it specifically, such as push notification permission; and **legal obligation** where a law requires us to keep or produce something.
+If you are in the EEA or UK, our legal bases are: **performance of a contract** for everything needed to operate your account and deliver the app; **legitimate interests** for security, abuse prevention, and debugging; **consent** where we ask for it specifically; and **legal obligation** where a law requires us to keep or produce something.
 
 ## Sign in with Google
 
@@ -47,9 +49,9 @@ If you use Apple to sign in, we receive your name and either your email address 
 
 ## Who else sees your data
 
-**Other members of your groups.** This is the main one. Your display name, and any tasks and messages you add to a group, are visible to everyone else in that group. Anyone can be added to a group by an existing member, so treat a group the way you would treat a group chat.
+**Other members of your groups.** This is the main one. Your name and username, and any tasks and messages you add to a group, are visible to everyone else in that group. You join a group by accepting an invitation from an existing member, so treat a group the way you would treat a group chat. If you block someone, the two of you stop seeing each other's messages; the rest of the group still sees both.
 
-**Our infrastructure providers.** Our application servers run on Heroku (Salesforce). Our database is hosted by Neon, which runs on Amazon Web Services. Both are located in the United States. Each processes this data on our instructions, under contract, and does not use it for its own purposes.
+**Our infrastructure providers.** Our application servers run on Heroku (Salesforce). Our database is hosted by Neon, which runs on Amazon Web Services. Both are located in the United States. Each processes this data on our instructions, under contract, and does not use it for its own purposes. Reports of objectionable content reach us by email, through Google's mail service.
 
 **Google and Apple**, for identity, as described above.
 
@@ -73,11 +75,13 @@ You can delete your account from inside the app, under Settings. We want to be e
 
 **Deleted outright:**
 
-- Your email address, username, first and last name, and display name.
-- Your password hash and all active sessions and refresh tokens.
+- Your email address, username, and first and last name.
+- All active sessions and refresh tokens, with the device details kept alongside them.
 - The links between your Grupa account and your Google or Apple account. Your Sign in with Apple token is revoked with Apple.
 - Your read-tracking data.
 - The copy of your name and email address held by our task service.
+- Your membership of every group you were in.
+- Your list of blocked users. A block that someone else placed on you stays, so that the messages you leave behind stay hidden from them.
 
 **Retained, with your identity removed:**
 
@@ -105,7 +109,7 @@ Grupa is not intended for children under 13, or under 16 in the EEA and UK. We d
 
 ## Security
 
-We serve all traffic over HTTPS, hash passwords, require credentials and an encrypted connection for every connection to our database, and restrict access to production systems to the people who need it.
+We serve all traffic over HTTPS, hold no passwords, require credentials and an encrypted connection for every connection to our database, and restrict access to production systems to the people who need it.
 
 To be clear about what we do **not** do: Grupa messages are not end-to-end encrypted. They are encrypted in transit and at rest, but we hold the keys, which means we are technically capable of reading message content and are obliged to produce it under a valid legal order. No system is perfectly secure, and we cannot guarantee absolute security.
 
